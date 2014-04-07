@@ -118,7 +118,7 @@ body{-webkit-text-size-adjust: none;font-family: helvetica,'LiHei','微軟正黑
 	left: 24px;
 	background: #444;
 	border-width: 12px;
-	box-shadow: 0 0 0 5px #fff inset;
+	/*box-shadow: 0 0 0 5px #fff inset;*/
 }
 
 .cover em{
