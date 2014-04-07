@@ -253,6 +253,7 @@ body{-webkit-text-size-adjust: none;font-family: helvetica,'LiHei','微軟正黑
 
 .upgrade ul{
 	width: 580px;
+	margin: auto
 }
 
 .upgrade li{
