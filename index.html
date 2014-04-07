@@ -1,79 +1,505 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+<head>
+<meta charset="UTF-8">
+<title>MRT</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Mrt : " />
+<body>
+<!--[if IE]>
+   <div class="upgrade">
+   <h1>升級您的瀏覽器比買捷運宅容易許多！</h1>
+   <h3>馬上下載最新的瀏覽器吧</h3>
+   <ul>
+			<li id="chrome">
+				<a href="http://www.google.com/chrome" title="Google Chrome">
+					<div class="icon"></div>
+					<h2>Google Chrome</h2>
+				</a>
+			</li>
+			<li id="firefox">
+				<a href="http://www.firefox.com/" title="Mozilla Firefox">
+					<div class="icon"></div>
+					<h2>Mozilla Firefox</h2>
+				</a>
+			</li>
+			<li id="safari">
+				<a href="http://www.apple.com/safari/" title="Apple Safari">
+					<div class="icon"></div>
+					<h2>Safari</h2>
+				</a>
+							</li>
+			<li id="ie">
+				<a href="http://windows.microsoft.com/ie" title="Microsoft Internet Explorer">
+					<div class="icon"></div>
+					<h2>Internet Explorer</h2>
+				</a>
+			</li>
+		</ul>
+   </div>
+<![endif]-->
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Mrt</title>
-  </head>
+<!-- FB -->
+<div id="fb-root"></div>
+<script>
+// (function(d, s, id) {
+//   var js, fjs = d.getElementsByTagName(s)[0];
+//   if (d.getElementById(id)) return;
+//   js = d.createElement(s); js.id = id;
+//   js.src = "http://connect.facebook.net/zh_TW/all.js#xfbml=1&appId=231301367002693";
+//   fjs.parentNode.insertBefore(js, fjs);
+// }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- FB -->
 
-  <body>
+<div class="cover"><span><h1></h1><em></em></span></div>
+<div class="cover-w"></div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/mrtmap/mrt">View on GitHub</a>
+<ul class="lines-name">
+	<li class="blar">板南土城線</li>
+	<li class="rlar">淡水信義線</li>
+	<li class="bwlar">文山內湖線</li>
+	<li class="glar">松山線</li>
+	<li class="sbtlar">小碧潭支線</li>
+	<li class="nbtlar">新北投支線</li>
+	<li class="olar">中和新蘆線</li>
+	<li class="ylar">環狀線</li>
+	<li class="aplar">桃園機場捷運</li>
+	<li class="pklar">社子輕軌南北線</li>
+	<li class="lglar">萬大樹林線</li>
+	<li class="lblar">三鶯線</li>
+	<li class="sllar">民生汐止線</li>
+	<li class="hylar">安坑線</li>
+	<li class="ovlar">莒光支線</li>
+	<li class="dglar">社子輕軌東西線</li>
+</ul>
 
-          <h1 id="project_title">Mrt</h1>
-          <h2 id="project_tagline"></h2>
+<div class="main">
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/mrtmap/mrt/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/mrtmap/mrt/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<!-- svg line -->
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<svg id="ovlar">
+<path fill="none" stroke="#BBC670" d="M375.913,688.001l-32.626-32.626
+	c0,0-5.374-5.374-12.974-5.374h-3.802"/>
+</svg>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<svg id="dglar">
+<path fill="none" stroke="#547473" d="M440.276,76
+	l0.036,52.619c0,0,0,7.085-5.485,12.57l-11.939,11.938c0,0-5.009,5.01-12.765,5.01H302.273c0,0-7.776,0-12.765,4.991l-57.241,57.241
+	c0,0-4.99,4.99-12.766,4.99l-111.944,0.078"/>
+</svg>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<svg id="hylar">
+<path fill="none" stroke="#FDD000" d="M594,693.277
+	l-51.098,51.079c0,0-4.966,4.967-12.703,4.967H337.327c-0.295,0-7.737,0-12.703-4.967l-28.521-28.521"/>
+</svg>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<svg id="pklar">
+<path fill="none" stroke="#E4007F" d="M168.892,126.272
+	l99.292-0.021c0,0,7.396,0,12.145,4.747l155.338,155.338"/>
+</svg>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<svg id="sbtlar">
+<path fill="none" stroke="#ABCD03" d="M658.901,729.119
+	l-6.971,0.021c0,0-7.594-0.021-12.431,4.859l-13.415,13.541"/>
+</svg>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<svg id="aplar">
+<path fill="none" stroke="#AF4284" d="M486.215,403.372
+	H169.432c0,0-7.719,0-12.672-4.954l-38.344-38.345c0,0-4.954-4.954-12.673-4.954l-58.022-0.233c0,0-8.493,0.031-8.493-7.394V128.705
+	"/>
+</svg>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<svg id="sllar">
+<path fill="none" stroke="#B5B07D" d="M461.012,325.744
+	h303.699c0,0,7.709,0,12.658-4.948l38.298-38.298c0,0,4.948-4.95,12.657-4.95h73.556c0,0,7.709,0,12.656-4.947l27.178-27.176
+	c0,0,4.947-4.948,12.656-4.948h106.795c7.416,0,7.835,7.414,7.835,7.414v170.533"/>
+</svg>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<svg id="nbtlar">
+<line fill="none" stroke="#F4B4D0" stroke-width="6" stroke-miterlimit="22.9256" x1="336.681" y1="38" x2="309.103" y2="65.579"/>
+</svg>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<svg id="lblar">
+<path fill="none" stroke="#5DC2D0" d="M38.347,473.731
+	v265.232c0,0,0,8.036,8.037,8.036h114.125"/>
+</svg>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<svg id="lglar">
+<path fill="none" stroke="#73BD59" d="M513.824,517.155
+	l-82.257,82.256c0,0-4.953,4.952-4.953,12.671v41.693c0,7.424-5.248,12.67-5.248,12.67l-14.289,14.29c0,0-5.248,5.247-12.67,5.247
+	l-257.255-0.531c-7.422,0-7.422-7.422-7.422-7.422V519.306c0,0,0-7.717-4.953-12.672l-39.58-39.579"/>
+</svg>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+<svg id="ylar">
+<path fill="none" stroke="#FFF100" d="M959.667,646.547
+	l-39.615,39.615c0,0-4.958,4.957-12.683,4.957H551.371c0,0-7.723,0-12.681-4.957l-53.23-53.231c0,0-4.958-4.957-12.683-4.957
+	H358.221c0,0-7.725,0-12.682-4.958l-43.198-43.198c0,0-5.253-5.252,0-10.503l32.142-32.144c0,0,5.253-5.255,0-10.506
+	L232.877,425.058c0,0-4.958-4.958-4.958-12.682v-99.835c0,0,0-7.725,4.958-12.682l86.661-86.661c0,0,4.957-4.958,12.682-4.958
+	h84.842c0,0,7.724,0,12.682-4.958l12.372-12.372c0,0,4.958-4.958,12.682-4.958H807.08c0,0,7.724,0,12.682,4.958l34.658,34.658
+	c0,0,4.957,4.958,4.957,12.683v64.465c0,0-0.049,9.929-7.772,17.653l-32.826,32.826c-0.025,0.061-7.69,7.724-7.69,17.639v135.791
+	c0,0,0,9.914-7.723,17.639l-61.608,61.608c0,0-4.957,4.956-12.682,4.956h-81.454c0,0-7.397,0-12.354,4.958l-92.992,92.99"/>
+</svg>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Mrt maintained by <a href="https://github.com/mrtmap">mrtmap</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<svg id="bwlar">
+<path fill="none" stroke="#AA5C3F" d="M951.063,652.464
+	H813.729c-7.425,0-7.425-7.424-7.425-7.424v-70.523c0-7.423-7.422-7.423-7.422-7.423h-74.236c-7.423,0-7.423-7.423-7.423-7.423
+	V273.865c0-7.423,7.423-7.423,7.423-7.423h25.983c7.422,0,7.422-7.424,7.422-7.424v-25.687c0,0,0.119-7.6-4.953-12.672
+	l-19.787-19.787c0,0-4.952-4.955-4.952-12.673v-14.551c0-7.424,7.423-7.424,7.423-7.424H965.91c0,0,7.423,0,7.423,7.424v155.893"/>
+</svg>
 
-    
+<svg id="olar">
+<path fill="none" stroke="#ffa900" d="M455.804,703.089
+	v-16.063c0,0,0-9.898,7.712-17.611l104.315-104.313c0,0,5.243-5.244,0-10.49l-27.047-27.045c0,0-5.245-5.247,0-10.49l17.17-17.171
+	c0,0,8.207-8.208,23.943-8.208h40.794c7.417,0,7.417-7.415,7.417-7.415V295.144c0-7.418-7.417-7.418-7.417-7.418H430.139
+	c0,0-7.713,0-12.661,4.95l-163.86,163.857c-0.104,0.105-5.053,5.055-12.766,5.055l-152.198,0.369"/>
+<line fill="none" stroke="#ffa900" x1="430.688" y1="287.726" x2="133.229" y2="287.726"/>
+</svg>
 
-  </body>
+<svg id="glar">
+<path fill="none" stroke="#009944" d="M907.653,370.354
+	H455.568c-7.41,0-7.41,7.411-7.41,7.411v111.169c0,7.411,7.41,7.411,7.41,7.411h33.057c0,0,7.706,0,12.651,4.945l153.156,153.154
+	c4.946,4.947,4.946,12.653,4.946,12.653v77.522c0,7.412,7.41,7.412,7.41,7.412h129.697"/>
+</svg>
+
+<svg id="rlar">
+<path fill="none" stroke="#E60012" d="M103.028,67.491
+	L313.5,67.575c0,0,7.78,0,12.775,4.995l188.342,184.236c0,0,4.994,4.994,4.994,12.774v230.512c0,0,0,7.781,4.994,12.775
+	l14.49,14.455c-0.134-0.134,5.292,5.292,10.583,0L567,508c0,0,4.994-4.994,12.774-4.994h385.093"/>
+</svg>
+
+<svg id="blar">
+<path fill="none" stroke="#007dc5" d="M973.071,328.026
+	v96.4c0,7.416-7.416,7.416-7.416,7.416H442.863c-7.415,0-7.415,7.417-7.415,7.417v37.076c0,7.416-7.415,7.416-7.415,7.416h-47.906
+	c0,0-7.71,0-12.659,4.949L232.763,623.405c-4.949,4.948-4.949,12.659-4.949,12.659l-0.129,78.759c0,0,0,7.416-5.243,12.658
+	l-14.276,14.276c0,0-5.244,5.244-12.659,5.244H161.58"/>
+</svg>
+
+<!-- stations -->
+
+
+<div class="ldots dglar">
+<b style="top:70px; left:431px"><span style="bottom:-2px;left:15px;">天母</sapn></b>
+<b style="top:95px; left:431px"><span style="bottom:-2px;left:15px;width:48px">台北體院</sapn></b>
+<b style="top:120px; left:431px"><span style="bottom:-2px;left:15px;">蘭雅</sapn></b>
+<b style="top:149px; left:408px" class="hfmsk"><span style="bottom:1px;left:15px">芝山</sapn></b>
+<b style="top:147px; left:350px"><span style="bottom:16px;left:-19px;width:48px">中正高中</sapn></b>
+<b style="top:147px; left:294px" class="hfmsk"><span style="bottom:16px;left:-2px;width:38px;">福國路</sapn></b>
+<b style="top:180px; left:253px"><span style="bottom:16px;left:-25px;width:38px">花卉村</sapn></b>
+<b style="top:215px; left:205px"><span style="bottom:16px;left:-9px;">富安</sapn></b>
+<b style="top:215px; left:170px"><span style="bottom:-20px;left:-19px;width:48px;">台北海院</sapn></b>
+<b style="top:215px; left:135px"><span style="bottom:16px;left:-14px;width:38px">溪砂尾</sapn></b>
+<b style="top:215px; left:100px"><span style="bottom:-20px;left:-14px;width:38px">浮洲子</sapn></b>
+</div>
+
+<div class="ldots sllar">
+<b style="top:315px; left:450px"><span style="bottom:16px;left:-15px;width:38px">大稻埕</sapn></b>
+<b style="top:315px; left:511px" class="hfmsk"><span style="bottom:10px;left:-29px">雙連</sapn></b>
+<b style="top:315px; left:621px" class="hfmsk"><span style="bottom:16px;left:-14px;width:38px">行天宮</sapn></b>
+<b style="top:315px; left:668px"><span style="bottom:16px;left:-9px;">龍江</sapn></b>
+<b style="top:315px; left:740px"><span style="bottom:16px;left:-9px;">東社</sapn></b>
+<b style="top:290px; left:785px"><span style="bottom:16px;left:-12px;">民生社區</sapn></b>
+<b style="top:269px; left:851px" class="hfmsk"><span style="bottom:-15px;left:-30px">舊宗</sapn></b>
+<b style="top:269px; left:885px"><span style="bottom:16px;left:-9px;">國醫中心</sapn></b>
+<b style="top:244px; left:922px"><span style="bottom:16px;left:-22px;width: 38px;">葫蘆洲</sapn></b>
+<b style="top:232px; left:945px"><span style="bottom:15px;left:-10px;">南湖</sapn></b>
+<b style="top:232px; left:1015px"><span style="bottom:15px;left:-10px;width: 38px;">下社後</sapn></b>
+<b style="top:272px; left:1059px"><span style="bottom:2px;left:-31px;">社后</sapn></b>
+<b style="top:312px; left:1059px"><span style="bottom:2px;left:-43px;width:38px">樟樹灣</sapn></b>
+<b style="top:342px; left:1059px"><span style="bottom:2px;left:-31px;">汐科</sapn></b>
+<b style="top:400px; left:1059px"><span style="bottom:2px;left:-31px;">汐止</sapn></b>
+</div>
+
+<div class="ldots hylar">
+<b style="top:678px; left:585px" class="hfmsk"><span style="bottom:-18px;left:8px;width:38px">十四張</sapn></b>
+<b style="top:717px; left:550px"><span style="bottom:-4px;left:15px;">中安</sapn></b>
+<b style="top:739px; left:517px"><span>柴埕</sapn></b>
+<b style="top:739px; left:480px"><span>安康</sapn></b>
+<b style="top:739px; left:443px"><span>安忠</sapn></b>
+<b style="top:739px; left:406px"><span style="left:-15px;width:38px">車子路</sapn></b>
+<b style="top:739px; left:369px"><span>僑信</sapn></b>
+<b style="top:739px; left:332px"><span>安祥</sapn></b>
+<b style="top:727px; left:306px"><span style="left:-31px;bottom: -15px;">雙城</sapn></b>
+<b style="top:707px; left:286px"><span style="left:-43px;bottom: -15px;width: 38px;">二叭子</sapn></b>
+</div>
+
+<div class="ldots ovlar">
+<b style="top:638px; left:315px"><span style="bottom:-2px;left: -33px;">莒光</sapn></b>
+</div>
+
+<div class="ldots lblar">
+<b style="top:737px; left:151px" class="hfmsk"><span>頂埔</sapn></b>
+<b style="top:737px; left:115px"><span style="left:-15px;width:38px">媽祖田</sapn></b>
+<b style="top:737px; left:70px"><span>挖子</sapn></b>
+<b style="top:720px; left:29px"><span style="bottom:-2px;left:15px;">橫溪</sapn></b>
+<b style="top:695px; left:29px"><span style="bottom:-2px;left:15px;width:60px">教育研究院</sapn></b>
+<b style="top:670px; left:29px"><span style="bottom:-2px;left:15px;width:48px">台北大學</sapn></b>
+<b style="top:645px; left:29px"><span style="bottom:-2px;left:15px;width:48px">客家園區</sapn></b>
+<b style="top:620px; left:29px"><span style="bottom:-2px;left:15px;">南鶯</sapn></b>
+<b style="top:595px; left:29px"><span style="bottom:-2px;left:15px;width:38px">鶯桃路</sapn></b>
+<b style="top:570px; left:29px"><span style="bottom:-2px;left:15px;">鳳鳴</sapn></b>
+<b style="top:545px; left:29px"><span style="bottom:-2px;left:15px;width:60px">大湳交流道</sapn></b>
+<b style="top:520px; left:29px"><span style="bottom:-2px;left:15px;width:38px">長安街</sapn></b>
+<b style="top:495px; left:29px"><span style="bottom:-2px;left:15px;width:48px">國防大學</sapn></b>
+<b style="top:470px; left:29px"><span style="bottom:-2px;left:15px;width:38px">更寮腳</sapn></b>
+</div>
+
+<div class="ldots lglar">
+<b style="top:525px; left:484px"><span style="bottom:2px;left:-43px;width:38px">植物園</sapn></b>
+<b style="top:546px; left:464px"><span style="bottom:2px;left:-43px;width:38px">西藏路</sapn></b>
+<b style="top:567px; left:444px"><span style="bottom:2px;left:-32px;">東園</sapn></b>
+<b style="top:588px; left:424px"><span style="bottom:2px;left:-32px;">永平</sapn></b>
+<b style="top:617px; left:417px" class="hfmsk"><span style="bottom:12px;left:14px;width:38px">華中橋</sapn></b>
+<b style="top:658px; left:408px"><span style="bottom:2px;left:-32px;">錦和</sapn></b>
+<b style="top:674px; left:361px"><span style="bottom:-21px;left:-20px;width:48px">中和高中</sapn></b>
+<b style="top:674px; left:315px"><span style="bottom:-21px;">清水</sapn></b>
+<b style="top:674px; left:269px"><span style="bottom:-21px;">柑林</sapn></b>
+<b style="top:675px; left:216px" class="hfmsk"><span style="left:9px;bottom:-15px">土城</sapn></b>
+<b style="top:674px; left:170px"><span style="bottom:-21px;left:-15px;width:38px">大安寮</sapn></b>
+<b style="top:655px; left:119px"><span style="bottom:-2px;left:15px;width:48px">中華高中</sapn></b>
+<b style="top:630px; left:119px"><span style="bottom:-2px;left:15px;width:38px">城林橋</sapn></b>
+<b style="top:605px; left:119px"><span style="bottom:-2px;left:15px">溪洲</sapn></b>
+<b style="top:580px; left:119px"><span style="bottom:-2px;left:15px">彭厝</sapn></b>
+<b style="top:555px; left:119px"><span style="bottom:-2px;left:15px">樹人</sapn></b>
+<b style="top:530px; left:119px"><span style="bottom:-2px;left:15px">潭底</sapn></b>
+<b style="top:505px; left:119px"><span style="bottom:-2px;left:15px;width:38px">監理所</sapn></b>
+</div>
+
+<div class="ldots pklar">
+<b style="top:278px; left:422px" class="hfmsk"><span style="bottom:11px;left:8px;width:38px">大橋頭</sapn></b>
+<b style="top:249px; left:398px"><span style="bottom:0px;left:13px;width:38px">大龍峒</sapn></b>
+<b style="top:225px; left:375px"><span style="bottom:0px;left:13px;width:38px">葫蘆堵</sapn></b>
+<b style="top:198px; left:347px" class="hfmsk"><span style="bottom:16px;left:-19px;width:48px">社正公園</sapn></b>
+<b style="top:169px; left:316px"><span style="bottom:-3px;left:-31px;">士商</sapn></b>
+<b style="top:147px; left:294px"><span style="bottom:16px;left:-2px;width:38px;">福國路</sapn></b>
+<b style="top:115px; left:260px"><span style="bottom:16px;left:-9px">馬場</sapn></b>
+<b style="top:115px; left:225px"><span style="bottom:16px;left:-9px">立農</sapn></b>
+<b style="top:115px; left:190px"><span style="bottom:16px;left:-9px">八仙</sapn></b>
+<b style="top:115px; left:155px"><span style="bottom:16px;left:-15px;width:38px">田心子</sapn></b>
+</div>
+
+<div class="ldots aplar">
+<b style="top:392px; left:469px"><span style="font-size:0">台北車站</sapn></b>
+<b style="top:392px; left:298px" class="hfmsk"><span style="bottom:16px;left:-19px">三重</sapn></b>
+<b style="top:392px; left:219px" class="hfmsk"><span style="bottom:11px;left:-49px;width:48px">新北<br>產業園區</sapn></b>
+<b style="top:392px; left:153px"><span style="bottom:-21px;left:-23px;width:60px">新莊副都心</sapn></b>
+<b style="top:362px; left:119px"><span style="bottom:-21px;left:-23px;">泰山</sapn></b>
+<b style="top:330px; left:29px"><span style="bottom:-2px;left:15px;width:48px">泰山貴和</sapn></b>
+<b style="top:304px; left:29px"><span style="bottom:-2px;left:15px;width:48px">體育大學</sapn></b>
+<b style="top:278px; left:29px"><span style="bottom:-2px;left:15px;width:48px">長庚醫院</sapn></b>
+<b style="top:252px; left:29px"><span style="bottom:-2px;left:15px;">林口</sapn></b>
+<b style="top:226px; left:29px"><span style="bottom:-2px;left:15px;">山鼻</sapn></b>
+<b style="top:200px; left:29px"><span style="bottom:-2px;left:15px;">坑口</sapn></b>
+<b style="top:174px; left:29px"><span style="bottom:-2px;left:15px;width:72px">機場第一行廈</sapn></b>
+<b style="top:148px; left:29px"><span style="bottom:-2px;left:15px;width:72px">機場第二行廈</sapn></b>
+<b style="top:122px; left:29px"><span style="bottom:-2px;left:15px;width:72px">機場第三行廈</sapn></b>
+</div>
+
+<div class="ldots ylar">
+<b style="top:644px; left:942px" class="hfmsk"><span style="bottom:16px;left:-15px;width:38px">動物園</sapn></b>
+<b style="top:682px; left:896px"><span style="bottom:-22px;left:-8px;">政大</sapn></b>
+<b style="top:682px; left:851px"><span style="bottom:-22px;left:-18px;width:48px">木柵新站</sapn></b>
+<b style="top:682px; left:806px"><span style="bottom:16px;left:-15px;width:38px">馬明潭</sapn></b>
+<b style="top:682px; left:761px"><span style="bottom:16px;left:-15px;width:38px">溝子口</sapn></b>
+<b style="top:682px; left:716px"><span style="bottom:16px;left:-15px;width:38px">遠東<br>工業區</sapn></b>
+<b style="top:682px; left:649px" class="hfmsk"><span style="bottom:10px;left:15px;width:38px">大坪林</sapn></b>
+<b style="top:678px; left:585px"><span style="bottom:-18px;left:8px;width:38px">十四張</sapn></b>
+<b style="top:300px; left:219px"><span style="bottom:-3px;left:-43px;width:38px">得仁里</sapn></b>
+<b style="top:330px; left:219px"><span style="bottom:-3px;left:-43px;width:38px">興珍里</sapn></b>
+<b style="top:360px; left:219px"><span style="bottom:-4px;left:15px;width:48px">工商<br>展覽中心</sapn></b>
+<b style="top:392px; left:219px"><span style="bottom:11px;left:-49px;width:48px">新北<br>產業園區</sapn></b>
+<b style="top:418px; left:229px"><span style="bottom:8px;left:11px;">幸福</sapn></b>
+<b style="top:478px; left:289px"><span style="bottom:15px;left:0px;width:48px">新埔民生</sapn></b>
+<b style="top:542px; left:294px" class="hfmsk"><span style="bottom:5px;left:-31px">板橋</sapn></b>
+<b style="top:590px; left:316px"><span style="bottom:15px;left:-9px">板新</sapn></b>
+<b style="top:617px; left:342px"><span style="bottom:15px;left:-9px">中原</sapn></b>
+<b style="top:617px; left:377px"><span style="bottom:15px;left:-9px">橋和</sapn></b>
+<b style="top:617px; left:417px"><span style="bottom:12px;left:14px;width:38px">華中橋</sapn></b>
+<b style="top:628px; left:483px" class="hfmsk"><span style="bottom:16px;left:-10px;">景安</sapn></b>
+<b style="top:653px; left:507px"><span style="bottom:-22px;left:-9px;">景平</sapn></b>
+<b style="top:678px; left:532px"><span style="bottom:-22px;left:-14px;width:38px">秀朗橋</sapn></b>
+<b style="top:654px; left:555px"><span style="bottom:16px;left:-9px;">得和</sapn></b>
+<b style="top:629px; left:580px"><span style="bottom:16px;left:-9px;">福和</sapn></b>
+<b style="top:606px; left:608px" class="hfmsk"><span style="bottom:0px;left:15px">公館</sapn></b>
+<b style="top:580px; left:674px"><span style="bottom:16px;left:-9px;">龍安</sapn></b>
+<b style="top:558px; left:752px" class="hfmsk"><span style="bottom:-21px;left:-14px;width:38px">六張犁</sapn></b>
+<b style="top:465px; left:802px"><span style="bottom:-2px;left:15px;width:38px">三張犁</sapn></b>
+<b style="top:421px; left:802px" class="hfmsk"><span style="bottom:-26px;left:-30px;width:38px">國父<br>紀念館</sapn></b>
+<b style="top:387px; left:802px"><span style="bottom:-2px;left:15px">中崙</sapn></b>
+<b style="top:319px; left:832px"><span style="bottom:7px;left:-32px">西松</sapn></b>
+<b style="top:269px; left:851px"><span style="bottom:-15px;left:-30px">舊宗</sapn></b>
+<b style="top:240px; left:851px"><span style="bottom:-1px;left:-57px;width:48px">時報廣場</sapn></b>
+<b style="top:210px; left:840px"><span style="bottom:-1px;left:16px;">瑞光</sapn></b>
+<b style="top:187px; left:818px"><span style="bottom:-1px;left:16px;width:72px">內湖科技園區</sapn></b>
+<b style="top:176px; left:770px"><span style="bottom:-20px;left:4px;width:38px">下塔悠</sapn></b>
+<b style="top:176px; left:718px" class="hfmsk"><span style="bottom:14px;left:-37px;width:38px">劍南路</sapn></b>
+<b style="top:176px; left:626px"><span style="bottom:16px;left:-9px;">故宮</sapn></b>
+<b style="top:176px; left:532px"><span style="bottom:16px;left:-19px;width:48px">雙溪公園</sapn></b>
+<b style="top:176px; left:436px" class="hfmsk"><span style="bottom:15px;left:6px">士林</sapn></b>
+<b style="top:198px; left:395px"><span style="bottom:16px;left:-14px;width:38px">士林<br>區公所</sapn></b>
+<b style="top:198px; left:347px"><span style="bottom:16px;left:-19px;width:48px">社正公園</sapn></b>
+<b style="top:213px; left:299px"><span style="bottom:16px;left:-34px;width:48px">五華國小</sapn></b>
+<b style="top:243px; left:270px"><span style="bottom:16px;left:-23px;width:38px">五華街</sapn></b>
+<b style="top:278px; left:233px" class="hfmsk"><span style="bottom:16px;left:-19px;width:48px">徐匯中學</sapn></b>
+</div>
+
+
+<div class="ldots olar">
+<b style="top:278px; left:130px"><span style="bottom:16px;left:-9px;">蘆洲</sapn></b>
+<b style="top:278px; left:180px"><span style="bottom:16px;left:-19px;width:48px">三民高中</sapn></b>
+<b style="top:278px; left:233px"><span style="bottom:16px;left:-19px;width:48px">徐匯中學</sapn></b>
+<b style="top:278px; left:300px"><span style="bottom:16px;left:-19px;width:48px">三和國中</sapn></b>
+<b style="top:278px; left:358px"><span style="bottom:16px;left:-19px;width:48px">三重國小</sapn></b>
+<b style="top:278px; left:422px"><span style="bottom:11px;left:8px;width:38px">大橋頭</sapn></b>
+<b style="top:319px; left:370px"><span style="bottom:15px;left:-24px;width:38px">台北橋</sapn></b>
+<b style="top:355px; left:334px"><span style="bottom:16px;left:-19px">菜寮</sapn></b>
+<b style="top:392px; left:298px"><span style="bottom:16px;left:-19px">三重</sapn></b>
+<b style="top:415px; left:274px"><span style="bottom:-5px;left:15px;width:38px">先嗇宮</sapn></b>
+<b style="top:439px; left:249px"><span style="bottom:-5px;left:15px;width:38px">頭前庄</sapn></b>
+<b style="top:451px; left:209px"><span style="bottom:16px;left:-9px">新莊</sapn></b>
+<b style="top:451px; left:163px"><span style="bottom:16px;left:-9px">輔大</sapn></b>
+<b style="top:451px; left:116px"><span style="bottom:16px;left:-9px">丹鳳</sapn></b>
+<b style="top:451px; left:71px"><span style="bottom:16px;left:-9px">迴龍</sapn></b>
+<b style="top:278px; left:511px" class="hfmsk"><span style="bottom:12px;left:10px">民權西路</sapn></b>
+<b style="top:278px; left:589px"><span style="bottom:16px;left:-19px;width:48px">中山國小</sapn></b>
+<b style="top:315px; left:621px"><span style="bottom:16px;left:-14px;width:38px">行天宮</sapn></b>
+<b style="top:359px; left:621px" class="hfmsk"><span style="bottom:12px;left:-28px">南京松江</sapn></b>
+<b style="top:421px; left:621px" class="hfmsk"><span style="bottom:10px;left:-29px">忠孝新生</sapn></b>
+<b style="top:492px; left:571px" class="hfmsk"><span style="bottom:15px;left:-9px;">東門</sapn></b>
+<b style="top:557px; left:555px" class="hfmsk"><span style="bottom:0px;left:15px">古亭</sapn></b>
+<b style="top:579px; left:532px"><span style="bottom:14px;left:-23px;">頂溪</sapn></b>
+<b style="top:603px; left:509px"><span style="bottom:-16px;left:14px;">永安市場</sapn></b>
+<b style="top:628px; left:483px"><span style="bottom:16px;left:-10px;">景安</sapn></b>
+<b style="top:686px; left:446px"><span style="bottom:-10px;left:14px;width:38px">南勢角</sapn></b>
+</div>
+
+<div class="ldots sbtlar">
+<b style="top:738px; left:617px"><span style="bottom:15px;left:-25px;width:38px">小碧潭</sapn></b>
+</div>
+
+<div class="ldots glar">
+<b style="top:359px; left:894px"><span style="bottom:16px;left:-10px;">松山</sapn></b>
+<b style="top:359px; left:854px"><span style="bottom:16px;left:-10px;">南京三民</sapn></b>
+<b style="top:359px; left:767px"><span style="bottom:16px;left:-15px;width:38px">台北小巨蛋</sapn></b>
+<b style="top:359px; left:707px" class="hfmsk"><span style="bottom:12px;left:-28px;">南京復興</sapn></b>
+<b style="top:359px; left:621px"><span style="bottom:12px;left:-28px">南京松江</sapn></b>
+<b style="top:360px; left:511px" class="hfmsk"><span style="bottom:10px;left:-29px">中山</sapn></b>
+<b style="top:375px; left:437px"><span style="bottom:14px;left:-25px;">北門</sapn></b>
+<b style="top:421px; left:437px" class="hfmsk"><span style="bottom:10px;left:-29px">西門</sapn></b>
+<b style="top:486px; left:456px"><span style="bottom:15px;left:-13px;width:38px">小南門</sapn></b>
+<b style="top:500px; left:511px" class="hfmsk"><span style="bottom:12px;left:-38px;width:38px">中正<br>紀念堂</sapn></b>
+<b style="top:557px; left:555px"><span style="bottom:0px;left:15px">古亭</sapn></b>
+<b style="top:582px; left:582px"><span style="bottom:0px;left:15px">台電大樓</sapn></b>
+<b style="top:606px; left:608px"><span style="bottom:0px;left:15px">公館</sapn></b>
+<b style="top:630px; left:630px"><span style="bottom:0px;left:15px">萬隆</sapn></b>
+<b style="top:654px; left:648px"><span style="bottom:0px;left:15px">景美</sapn></b>
+<b style="top:682px; left:649px"><span style="bottom:10px;left:15px;width:38px">大坪林</sapn></b>
+<b style="top:719px; left:649px"><span style="bottom:0px;left:15px;">七張</sapn></b>
+<b style="top:740px; left:722px"><span style="bottom:15px;left:-15px;width:38px">新店區公所</sapn></b>
+<b style="top:740px; left:785px"><span style="bottom:15px;left:-10px">新店</sapn></b>
+
+</div>
+
+<div class="ldots bwlar">
+<b style="top:644px; left:942px"><span style="bottom:16px;left:-15px;width:38px">動物園</sapn></b>
+<b style="top:644px; left:894px"><span style="bottom:16px;left:-10px;">木柵</sapn></b>
+<b style="top:644px; left:846px"><span style="bottom:16px;left:-10px;">萬芳社區</sapn></b>
+<b style="top:630px; left:796px"><span style="bottom:-8px;left:-32px;">萬芳醫院</sapn></b>
+<b style="top:600px; left:796px"><span style="bottom:-1px;left:16px;">辛亥</sapn></b>
+<b style="top:570px; left:796px"><span style="bottom:-1px;left:16px;">麟光</sapn></b>
+<b style="top:558px; left:752px"><span style="bottom:-21px;left:-14px;width:38px">六張犁</sapn></b>
+<b style="top:535px; left:707px"><span style="bottom:2px;left:-32px;">科技大樓</sapn></b>
+<b style="top:492px; left:707px" class="hfmsk"><span style="bottom:15px;left:10px;">大安</sapn></b>
+<b style="top:421px; left:707px" class="hfmsk"><span style="bottom:10px;left:-29px">忠孝復興</sapn></b>
+<b style="top:359px; left:707px"><span style="bottom:12px;left:-28px;">南京復興</sapn></b>
+<b style="top:295px; left:707px"><span style="bottom:12px;left:-28px;">中山國中</sapn></b>
+<b style="top:257px; left:724px"><span style="bottom:14px;left:-10px;">松山機場</sapn></b>
+<b style="top:219px; left:745px"><span style="bottom:14px;left:5px;">大直</sapn></b>
+<b style="top:176px; left:718px"><span style="bottom:14px;left:-37px;width:38px">劍南路</sapn></b>
+<b style="top:157px; left:743px"><span style="bottom:16px;left:-10px;">西湖</sapn></b>
+<b style="top:157px; left:794px"><span style="bottom:16px;left:-10px;">港墘</sapn></b>
+<b style="top:157px; left:841px"><span style="bottom:16px;left:-10px;">文德</sapn></b>
+<b style="top:157px; left:888px"><span style="bottom:16px;left:-10px;">內湖</sapn></b>
+<b style="top:157px; left:935px"><span style="bottom:16px;left:-20px;width:48px">大湖公園</sapn></b>
+<b style="top:190px; left:963px"><span style="bottom:12px;left:10px">葫洲</sapn></b>
+<b style="top:232px; left:963px"><span style="bottom:12px;left:10px">東湖</sapn></b>
+<b style="top:281px; left:963px"><span style="bottom:5px;left:12px;width:48px">南港<br>軟體園區</sapn></b>
+<b style="top:321px; left:963px" class="hfmsk"><span style="bottom:5px;left:-42px;width:38px">南港<br>展覽館</sapn></b>
+</div>
+
+<div class="ldots nbtlar">
+<b style="top:30px; left:326px"><span style="bottom:15px;left:-15px;width:38px">新北投</sapn></b>
+</div>
+
+<div class="ldots rlar">
+<b style="top:57px; left:90px"><span style="left:-9px">淡水</sapn></b>
+<b style="top:57px; left:125px"><span style="bottom:15px;left:-14px;width:38px">紅樹林</sapn></b>
+<b style="top:57px; left:160px"><span style="left:-9px">竹圍</sapn></b>
+<b style="top:57px; left:195px"><span style="bottom:15px;left:-9px">關渡</sapn></b>
+<b style="top:57px; left:230px"><span style="left:-9px">忠義</sapn></b>
+<b style="top:57px; left:265px"><span style="bottom:15px;left:-14px;width:38px">復興崗</sapn></b>
+<b style="top:57px; left:300px"><span style="left:-9px">北投</sapn></b>
+<b style="top:70px; left:326px"><span style="bottom:15px;left:6px">奇岩</sapn></b>
+<b style="top:92px; left:347px"><span style="bottom:15px;left:6px;width:38px">唭哩岸</sapn></b>
+<b style="top:112px; left:367px"><span style="bottom:15px;left:6px">石牌</sapn></b>
+<b style="top:131px; left:387px"><span style="bottom:15px;left:6px">明德</sapn></b>
+<b style="top:149px; left:408px"><span style="bottom:1px;left:15px">芝山</sapn></b>
+<b style="top:176px; left:436px"><span style="bottom:15px;left:6px">士林</sapn></b>
+<b style="top:204px; left:460px"><span style="bottom:2px;left:15px">劍潭</sapn></b>
+<b style="top:234px; left:488px"><span style="bottom:2px;left:15px">圓山</sapn></b>
+<b style="top:278px; left:511px"><span style="bottom:12px;left:10px">民權西路</sapn></b>
+<b style="top:315px; left:511px"><span style="bottom:10px;left:-29px">雙連</sapn></b>
+<b style="top:360px; left:511px"><span style="bottom:10px;left:-29px">中山</sapn></b>
+<b style="top:421px; left:511px" class="hfmsk"><span style="bottom:10px;left:-29px">台北車站</sapn></b>
+<b style="top:460px; left:511px"><span style="bottom:10px;left:-29px">台大醫院</sapn></b>
+<b style="top:500px; left:511px"><span style="bottom:12px;left:-38px;width:38px">中正<br>紀念堂</sapn></b>
+<b style="top:492px; left:571px"><span style="bottom:15px;left:-9px;">東門</sapn></b>
+<b style="top:492px; left:660px"><span style="bottom:15px;left:-20px;width:48px">大安<br>森林公園</sapn></b>
+<b style="top:492px; left:707px"><span style="bottom:15px;left:10px;">大安</sapn></b>
+<b style="top:492px; left:759px"><span style="bottom:13px;left:10px;">信義安和</sapn></b>
+<b style="top:492px; left:830px"><span style="bottom:-30px;left:-17px;width:48px">台北101<br>世貿</sapn></b>
+<b style="top:492px; left:870px"><span>象山</sapn></b>
+<b style="top:492px; left:910px"><span>松德</sapn></b>
+<b style="top:492px; left:950px"><span>玉成</sapn></b>
+</div>
+
+<div class="ldots blar">
+<b style="top:737px; left:151px"><span>頂埔</sapn></b>
+<b style="top:723px; left:204px"><span style="left:0">永寧</sapn></b>
+<b style="top:675px; left:216px"><span style="left:9px;bottom:-15px">土城</sapn></b>
+<b style="top:633px; left:217px"><span style="left:9px;bottom:-15px">海山</sapn></b>
+<b style="top:599px; left:237px"><span style="bottom:0px;left:-34px">亞東醫院</sapn></b>
+<b style="top:570px; left:267px"><span style="bottom:5px;left:-31px">府中</sapn></b>
+<b style="top:542px; left:294px"><span style="bottom:5px;left:-31px">板橋</sapn></b>
+<b style="top:510px; left:327px"><span style="left:9px;bottom:-15px">新埔</sapn></b>
+<b style="top:478px; left:359px"><span style="left:-4px;bottom:-20px;width:38px">江子翠</sapn></b>
+<b style="top:472px; left:410px"><span style="left:-11px;width:38px">龍山寺</sapn></b>
+<b style="top:421px; left:437px"><span style="bottom:10px;left:-29px">西門</sapn></b>
+<b style="top:421px; left:511px"><span style="bottom:10px;left:-29px">台北車站</sapn></b>
+<b style="top:421px; left:566px"><span style="left:-14px;width:38px">善導寺</sapn></b>
+<b style="top:421px; left:621px"><span style="bottom:10px;left:-29px">忠孝新生</sapn></b>
+<b style="top:421px; left:707px"><span style="bottom:10px;left:-29px">忠孝復興</sapn></b>
+<b style="top:421px; left:755px"><span style="bottom:10px;left:-29px">忠孝敦化</sapn></b>
+<b style="top:421px; left:802px"><span style="bottom:-26px;left:-30px;width:38px">國父<br>紀念館</sapn></b>
+<b style="top:421px; left:846px"><span style="left:-14px;width:38px">市政府</sapn></b>
+<b style="top:421px; left:891px"><span>永春</sapn></b>
+<b style="top:421px; left:936px"><span style="left:-14px;width:38px">後山埤</sapn></b>
+<b style="top:400px; left:963px"><span style="bottom:5px;left:-31px">昆陽</sapn></b>
+<b style="top:360px; left:963px"><span style="bottom:5px;left:-31px">南港</sapn></b>
+<b style="top:321px; left:963px"><span style="bottom:5px;left:-42px;width:38px">南港<br>展覽館</sapn></b>
+</div>
+
+</div>
+
+<div class="btmcmt">
+	<div class="fbcmt"><div class="fb-comments" data-href="http://example.com" data-width="800" data-num-posts="20"></div></div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>
