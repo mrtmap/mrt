@@ -214,11 +214,11 @@ body{-webkit-text-size-adjust: none;font-family: helvetica,'LiHei Pro','微軟�
 	background:#ccc;
 	width: 100%;
 	padding: 20px 0;
+	text-align: center;
 }
 
-.btmcmt .fbcmt{
-	width: 800px;
-	margin: auto;
+.fbFeedbackContent .composer{
+	border:0 !important;
 }
 
 /* ie */
