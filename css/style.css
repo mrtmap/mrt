@@ -224,13 +224,13 @@ body{-webkit-text-size-adjust: none;font-family: helvetica,'LiHei','微軟正黑
 
 .btm-links{
 	text-align: center;
-	font-size: 12px;
-	color:#888;
+	font-size: 13px;
+	color:#666;
 }
 
 .btm-links a{
 	color:#666;
-	margin: 0 10px;
+	margin: 0 5px;
 	text-decoration: underline;
 }
 .btm-links a:hover{
