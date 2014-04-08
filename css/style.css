@@ -229,7 +229,8 @@ body{-webkit-text-size-adjust: none;font-family: helvetica,'LiHei','微軟正黑
 }
 
 .btm-links a{
-	color:#888;
+	color:#666;
+	margin: 0 10px;
 	text-decoration: underline;
 }
 .btm-links a:hover{
