@@ -52,6 +52,9 @@ path,line{
 	stroke-linejoin:round;
 	stroke-miterlimit:22.9256;
 }
+svg#ovlar path{
+	stroke: #BBC670
+}
 svg#dglar path{
 	stroke: #547473
 }
