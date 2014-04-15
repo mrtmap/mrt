@@ -88,7 +88,7 @@ svg#ylar path{
 svg#bwlar path{
 	stroke: #AA5C3F
 }
-svg#olar path{
+svg#olar path,svg#olar line{
 	stroke: #ffa900
 }
 svg#glar path{
