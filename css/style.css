@@ -45,6 +45,60 @@ body{-webkit-text-size-adjust: none;font-family: helvetica,'LiHei','微軟正黑
 .main .bgp,.main .ldots{width:1100px;height:800px;position:absolute;top:0;left:0}
 .main svg{position:absolute;top:0;left:0;width: 1100px;height: 800px;}
 
+/* svg */
+path,line{
+	fill: none;
+	stroke-width: 6.5;
+	stroke-linejoin:round;
+	stroke-miterlimit:22.9256;
+}
+svg#dglar path{
+	stroke: #547473
+}
+svg#hylar path{
+	stroke: #FDD000
+}
+svg#pklar path{
+	stroke: #E4007F
+}
+svg#sbtlar path{
+	stroke: #ABCD03
+}
+svg#aplar path{
+	stroke: #AF4284
+}
+svg#sllar path{
+	stroke: #B5B07D
+}
+svg#nbtlar line{
+	stroke: #F4B4D0
+}
+svg#lblar path{
+	stroke: #5DC2D0
+}
+svg#lglar path{
+	stroke: #73BD59
+}
+svg#ylar path{
+	stroke: #FFF100
+}
+svg#bwlar path{
+	stroke: #AA5C3F
+}
+svg#olar path{
+	stroke: #ffa900
+}
+svg#glar path{
+	stroke: #009944
+}
+svg#rlar path{
+	stroke: #E60012
+}
+svg#blar path{
+	stroke: #007dc5
+}
+
+
 .ldots b{width:8px;height:8px;border-radius:50%;position:absolute;z-index:10;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,0.2);cursor:pointer;}
 .ldots b.hfmsk{width:8px;height:4px;z-index:90;position:absolute;font-size: 0;border-radius:10px 10px 0 0;border-bottom: 0px;box-shadow: 0 0 0 #fff;}
 .ldots b.hfmsk span{font-size: 0;}

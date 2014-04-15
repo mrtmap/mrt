@@ -6,11 +6,6 @@ $('svg').attr({
     'enable-background': 'new 0 0 1100 800',
     'xml:space': 'preserve'
 });
-$('path,line').attr({
-    'stroke-width': '6.5',
-    'stroke-linejoin': 'round',
-    'stroke-miterlimit': '22.9256'
-});
 
 //pop
 
